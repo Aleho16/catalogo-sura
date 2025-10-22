@@ -1,3 +1,8 @@
-INTEGRANTES DEL GRUPO:
-HTML-
-CSS- Jaime Alejandro Perez Rojas
+INTEGRANTES DEL GRUPO "catalogo cursos":
+
+Jaime Alejandro Perez Rojas
+Juan esteban Perez
+Sebastian Quintero
+Brahian Estiben Pino Prado
+Evelyn Jimenez
+Laura Estefania Londoño Gallego

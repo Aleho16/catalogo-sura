@@ -1,0 +1,113 @@
+/* ======= ESTILOS GENERALES ======== */
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #134686;
+    border: 2px solid #1d579c;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.3em;
+  }
+  
+  header h2 {
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 1.3em;
+    opacity: 0.9;
+  }
+  iframe {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  /* ======== MENÚ DE CATEGORÍAS ======== */
+  .nav-item :hover{
+    background-color: #1d579c;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* ======== SECCIÓN DE CURSOS ======== */
+  .cursos {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .cursos h2 {
+    color: #134686;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+  }
+  
+  /* ======== TARJETAS DE CURSOS ======== */
+  .contenedor-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    border: 2px solid #134686;
+  }
+  
+  .tarjeta img {
+    width: 5%;
+    border-radius: 10px;
+  }
+  
+  .tarjeta h3 {
+    color: #134686;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .tarjeta p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  
+  
+  
+  /* ======== FOOTER ======== */
+  footer {
+    background-color: #134686;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+  }
+  

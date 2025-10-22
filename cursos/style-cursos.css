@@ -1,0 +1,159 @@
+:root {
+  --azul-sura: #004C97;
+  --celeste-sura: #00AEEF;
+  --gris-suave: #f4f7fa;
+  --texto: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: white;
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--azul-sura);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header img {
+  height: 40px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.header nav a:hover,
+.header nav a.active {
+  color: var(--celeste-sura);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: var(--gris-suave);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: var(--azul-sura);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.btn-primario {
+  background-color: var(--azul-sura);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primario:hover {
+  background-color: var(--celeste-sura);
+}
+
+.hero-img {
+  width: 300px;
+  max-width: 40%;
+}
+
+/* CONTENIDO */
+.contenido {
+  padding: 2rem;
+}
+
+.contenido h3 {
+  color: var(--azul-sura);
+  margin-bottom: 1rem;
+}
+
+.lista-temas {
+  list-style: none;
+}
+
+.lista-temas li {
+  background-color: var(--gris-suave);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.lista-temas li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    border: 2px solid #134686;
+}
+
+/* INSTRUCTOR */
+.instructor {
+  padding: 2rem;
+}
+
+.card-instructor {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--gris-suave);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card-instructor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* REQUISITOS */
+.requisitos {
+  padding: 2rem;
+  background-color: var(--gris-suave);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--azul-sura);
+  color: white;
+  font-size: 0.9rem;
+}

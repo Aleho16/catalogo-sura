@@ -1,5 +1,8 @@
 /* ======= ESTILOS GENERALES ======== */
 *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: 'Inter', sans-serif;
 }
 
@@ -8,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+  line-height: 1.6;
   }
   
   header {
@@ -110,4 +114,137 @@ body {
     font-size: 0.9em;
     letter-spacing: 0.5px;
   }
-  
+  /*--------STYLE CURSOS--------*/
+
+/* HEADER */
+.header {
+  background-color: #004C97;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header img {
+  height: 40px;
+}
+
+.header nav a { 
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+
+.header nav a.cursos {
+  color: #00AEEF;
+}
+.header nav a:hover{
+  color: white;
+}
+
+
+
+.cont1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #f4f7fa;
+}
+
+.cont1-text {
+  max-width: 600px;
+}
+
+.cont1 h2 {
+  font-size: 2rem;
+  color: #004C97;
+  margin-bottom: 1rem;
+}
+
+.cont1 p {
+  margin-bottom: 1.5rem;
+}
+
+.boton {
+  background-color: #004C97;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: white;
+  color: #004C97;
+  border-style: solid;
+  border-color: #004C97;
+}
+
+/* CONTENIDO */
+.contenido {
+  padding: 2rem;
+}
+
+.contenido h3 {
+  color: #004C97;
+  margin-bottom: 1rem;
+}
+
+.lista-temas {
+  list-style: none;
+}
+
+.lista-temas li {
+  background-color: #f4f7fa;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.lista-temas li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    border: 2px solid #134686;
+}
+
+/* INSTRUCTOR */
+.instructor {
+  padding: 2rem;
+}
+
+.tarjeta-instructor {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #f4f7fa;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.tarjeta-instructor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* REQUISITOS */
+.requisitos {
+  padding: 2rem;
+  background-color: #f4f7fa;
+}

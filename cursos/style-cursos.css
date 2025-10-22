@@ -14,13 +14,13 @@
 
 body {
   background-color: white;
-  color: var(--texto);
+  color: #333;
   line-height: 1.6;
 }
 
 /* HEADER */
-.header {
-  background-color: var(--azul-sura);
+header {
+  background-color: #004C97;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -28,17 +28,17 @@ body {
   padding: 1rem 2rem;
 }
 
-.header .logo {
+header .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.header img {
+header img {
   height: 40px;
 }
 
-.header nav a {
+header nav a {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
@@ -46,36 +46,40 @@ body {
   transition: color 0.3s;
 }
 
-.header nav a:hover,
-.header nav a.active {
-  color: var(--celeste-sura);
+
+header nav a.cursos {
+  color: #00AEEF;
+}
+header nav a:hover{
+  color: white;
 }
 
-/* HERO */
-.hero {
+
+
+.cont1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 2rem;
-  background-color: var(--gris-suave);
+  background-color: #f4f7fa;
 }
 
-.hero-text {
+.cont1-text {
   max-width: 600px;
 }
 
-.hero h2 {
+.cont1 h2 {
   font-size: 2rem;
-  color: var(--azul-sura);
+  color: #004C97;
   margin-bottom: 1rem;
 }
 
-.hero p {
+.cont1 p {
   margin-bottom: 1.5rem;
 }
 
-.btn-primario {
-  background-color: var(--azul-sura);
+.boton {
+  background-color: #004C97;
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -85,13 +89,11 @@ body {
   transition: background-color 0.3s;
 }
 
-.btn-primario:hover {
-  background-color: var(--celeste-sura);
-}
-
-.hero-img {
-  width: 300px;
-  max-width: 40%;
+.boton:hover {
+  background-color: white;
+  color: #004C97;
+  border-style: solid;
+  border-color: #004C97;
 }
 
 /* CONTENIDO */
@@ -100,7 +102,7 @@ body {
 }
 
 .contenido h3 {
-  color: var(--azul-sura);
+  color: #004C97;
   margin-bottom: 1rem;
 }
 
@@ -109,7 +111,7 @@ body {
 }
 
 .lista-temas li {
-  background-color: var(--gris-suave);
+  background-color: #f4f7fa;
   padding: 0.8rem 1rem;
   border-radius: 8px;
   margin-bottom: 0.5rem;
@@ -127,16 +129,16 @@ body {
   padding: 2rem;
 }
 
-.card-instructor {
+.tarjeta-instructor {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: var(--gris-suave);
+  background-color: #f4f7fa;
   padding: 1rem;
   border-radius: 10px;
 }
 
-.card-instructor img {
+.tarjeta-instructor img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -146,14 +148,14 @@ body {
 /* REQUISITOS */
 .requisitos {
   padding: 2rem;
-  background-color: var(--gris-suave);
+  background-color: #f4f7fa;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: var(--azul-sura);
+  background-color: #004C97;
   color: white;
   font-size: 0.9rem;
 }
